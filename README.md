@@ -4,7 +4,7 @@ Minze is an FPGA computer designed by Lone Dynamics Corporation.
 
 ![Minze Computer](https://github.com/machdyne/minze/blob/d00effaa4c513aa412bb1fb566030dfaf1d985c2/minze.png)
 
-This repo contains schematics, PCB layouts, pinouts, a 3D-printable case (soon), example gateware and documentation.
+This repo contains schematics, PCB layouts, pinouts, a 3D-printable case, example gateware and documentation.
 
 Find more information on the [Minze product page](https://machdyne.com/product/minze-computer/).
 
