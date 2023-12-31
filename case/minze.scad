@@ -43,6 +43,12 @@ module mdm_board() {
 }
 
 module mdm_case_top() {
+
+	// supports
+	translate([wall, wall, 0]) {
+		translate([40.5,53.7-(9.5/2)-1,0]) cube([1,1,14.9]);
+		translate([40.5,53.7-(9.5/2)-8.45,0]) cube([1,1,14.9]);
+	}
 	
 	difference() {
 				
@@ -125,7 +131,7 @@ module mdm_case_bottom() {
 		translate([wall, wall, 0]) {
 
 			// USBC
-			translate([30.5,53.7-(9.5/2),5]) cube([10.20,9.5,10.5+1]);
+			translate([30.5,43,5]) cube([10.20,15,10.5+1]);
 
 		}
 
