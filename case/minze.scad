@@ -19,7 +19,7 @@ board_spacing = 2;
 wall = 1.5;
 
 top_height = 15;
-bottom_height = 10;
+bottom_height = 10.5;
 
 translate([wall,wall,0]) mdm_board();
 
@@ -142,10 +142,10 @@ module mdm_case_bottom() {
 		translate([42-5, 68-5, -11]) cylinder(d=3.2, h=25);
 
 		// nut holes
-		translate([5, 5, -1]) cylinder(d=7, h=4, $fn=6);
-		translate([5, 68-5, -1]) cylinder(d=7, h=4, $fn=6);
-		translate([42-5, 5, -1]) cylinder(d=7, h=4, $fn=6);
-		translate([42-5, 68-5, -1]) cylinder(d=7, h=4, $fn=6);
+		translate([5, 5, -0.75]) cylinder(d=7, h=4, $fn=6);
+		translate([5, 68-5, -0.75]) cylinder(d=7, h=4, $fn=6);
+		translate([42-5, 5, -0.75]) cylinder(d=7, h=4, $fn=6);
+		translate([42-5, 68-5, -0.75]) cylinder(d=7, h=4, $fn=6);
 
 		}
 		
