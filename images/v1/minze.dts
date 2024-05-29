@@ -27,6 +27,8 @@
                 device_type = "cpu";
                 compatible = "riscv";
                 riscv,isa = "rv32i2p0_ma";
+                riscv,isa-base = "rv32i";
+                riscv,isa-extensions = "i", "m", "a";
                 mmu-type = "riscv,sv32";
                 reg = <0>;
                 clock-frequency = <48000000>;
@@ -47,6 +49,7 @@
                 i-tlb-size = <4>;
                 i-tlb-sets = <4>;
 
+                
                 L0: interrupt-controller {
                     #address-cells = <0>;
                     #interrupt-cells = <0x00000001>;
@@ -58,7 +61,7 @@
             
         };
 
-        memory@40000000 {
+        memory: memory@40000000 {
             device_type = "memory";
             reg = <0x40000000 0x2000000>;
         };
@@ -100,6 +103,7 @@
                 interrupts-extended = <
                     &L0 11 &L0 9>;
                 riscv,ndev = <32>;
+                
             };
 
             liteuart0: serial@f0001000 {
