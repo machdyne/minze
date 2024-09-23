@@ -91,9 +91,9 @@ $ sudo dfu-util -a 0 -D build/minze/gateware/minze.bit
 The 3.3V JTAG header can be used to program the FPGA SRAM as well as the MMOD flash memory. It can also be used to provide power (5V) to the board.
 
 ```
-1 2
-3 4
-5 6
+6 5
+4 3
+2 1
 ```
 
 | Pin | Signal |
