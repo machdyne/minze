@@ -66,6 +66,8 @@ See the [Kakao Linux](https://github.com/machdyne/kakao) repo for the latest ins
 
 Prebuilt gateware capable of running Linux is available in the `images/v1` directory.
 
+These images support a serial console on the PMOD socket. You can use a standard USB-UART PMOD to access the BIOS, boot messages and serial console.
+
 ### Building Linux-capable Gateware
 
 Please follow the setup instructions in the [linux-on-litex-vexriscv](https://github.com/litex-hub/linux-on-litex-vexriscv) repo and then:
